@@ -1,0 +1,84 @@
+/* Mobile First Responsive */
+
+.container{
+width:100%;
+max-width:420px;
+margin:auto;
+}
+
+@media (max-width:480px){
+
+body{
+padding:15px;
+}
+
+.glass{
+padding:20px;
+border-radius:20px;
+}
+
+h1{
+font-size:26px;
+}
+
+.sub{
+font-size:13px;
+}
+
+.inputBox label{
+font-size:13px;
+}
+
+.inputBox input{
+padding:14px;
+font-size:15px;
+}
+
+button{
+padding:14px;
+font-size:16px;
+}
+
+.invoice{
+padding:18px;
+}
+
+.invoice h2{
+font-size:22px;
+}
+
+.invoice p{
+font-size:15px;
+}
+
+.invoice h3{
+font-size:22px;
+}
+
+.buttons{
+flex-direction:column;
+gap:10px;
+}
+
+}
+
+@media (min-width:768px){
+
+.container{
+max-width:500px;
+}
+
+.glass{
+padding:30px;
+}
+
+h1{
+font-size:34px;
+}
+
+.invoice{
+padding:28px;
+}
+
+}
+

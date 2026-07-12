@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arceus Nest Bill Generator</title>
+
+<link rel="stylesheet" href="Css/style.css">
+<link rel="stylesheet" href="Css/animation.css">
+<link rel="stylesheet" href="Css/responsive.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="glass">
+
+<div class="header">
+
+<div class="header">
+  <img src="Assets/Logo" class="logo" alt="ARCEUS">
+</div>
+
+<h1>ARCEUS NEST</h1>
+
+<p class="sub">
+Professional Bill Generator
+</p>
+
+</div>
+
+<div class="inputBox">
+
+<label>Client Name</label>
+
+<input
+type="text"
+id="clientName"
+placeholder="Enter Client Name">
+
+</div>
+
+<div class="inputBox">
+
+<label>Total Live Unit</label>
+
+<input
+type="number"
+id="liveUnit"
+placeholder="Enter Live Unit">
+
+</div>
+
+<div class="inputBox">
+
+<label>Live Rate (Auto Fixed)</label>
+
+<input
+type="number"
+id="rate"
+value="6"
+readonly>
+
+</div>
+
+<div class="inputBox">
+
+<label>UPI ID</label>
+
+<input
+type="text"
+id="upi"
+placeholder="example@fam">
+
+</div>
+
+<button id="generateBtn">
+
+Generate Bill
+
+</button>
+
+</div>
+
+<div
+class="invoice hide"
+id="invoice">
+
+<h2>ARCEUS NEST</h2>
+
+<hr>
+
+<p>
+
+<b>Invoice ID :</b>
+
+<span id="invoiceId"></span>
+
+</p>
+
+<p>
+
+<b>Date :</b>
+
+<span id="date"></span>
+
+</p>
+
+<p>
+
+<b>Client :</b>
+
+<span id="showName"></span>
+
+</p>
+
+<p>
+
+<b>Total Live Units :</b>
+
+<span id="showUnit"></span>
+
+</p>
+
+<p>
+
+<b>Approved Rate :</b>
+
+₹<span id="showRate"></span>
+
+</p>
+
+<p>
+
+<b>UPI ID :</b>
+
+<span id="showUpi"></span>
+
+</p>
+
+<hr>
+
+<h3>
+
+Total Payable :
+
+₹<span id="total"></span>
+
+</h3>
+
+<p class="footer">
+
+Powered By Arceus Nest
+
+</p>
+
+</div>
+
+<div
+class="buttons hide"
+id="actionButtons">
+
+<button id="downloadBtn">
+
+Download Bill
+
+</button>
+
+<button id="shareBtn">
+
+Share Bill
+
+</button>
+
+</div>
+
+</div>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+<script src="Libs/qrcode.min.js"></script>
+
+<script src="Js/app.js"></script>
+
+<script src="Js/bill.js"></script>
+
+<script src="Js/invoice.js"></script>
+
+<script src="Js/download.js"></script>
+
+<script src="Js/share.js"></script>
+
+<script src="Js/validation.js"></script>
+
+</body>
+
+</html>
+
